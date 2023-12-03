@@ -23,7 +23,4 @@ Route::get('/metrics/{username}/{repoName}/commit-frequency', [GitHubMetricsCont
 Route::get('/metrics/{username}/{repoName}/code-review-involvement', [GitHubMetricsController::class, 'getCodeReviewInvolvement']);
 Route::get('/metrics/{username}/{repoName}/issue-resolution-time', [GitHubMetricsController::class, 'getIssueResolutionTime']);
 Route::get('/metrics/{username}/{repoName}/code-churn', [GitHubMetricsController::class, 'getCodeChurn']);
-Route::get('/metrics/VirajeeAmarasinghe/commits', [GitHubMetricsController::class, 'getCommits']);
-Route::get('/metrics/VirajeeAmarasinghe/pull-requests', [GitHubMetricsController::class, 'getPullRequests']);
-Route::get('/metrics/VirajeeAmarasinghe/issues-resolved', [GitHubMetricsController::class, 'getIssuesResolved']);
-Route::get('/metrics/VirajeeAmarasinghe/code-churn', [GitHubMetricsController::class, 'getCodeChurn']);
+

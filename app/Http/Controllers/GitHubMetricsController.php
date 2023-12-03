@@ -12,22 +12,7 @@ class GitHubMetricsController extends Controller
     public function __construct(GitHubMetricsService $gitHubMetricsService)
     {
         $this->gitHubMetricsService = $gitHubMetricsService;
-    }
-
-    public function getCommits($username)
-    {
-        return $this->gitHubMetricsService->getCommits($username);
-    }
-
-    public function getPullRequests($username)
-    {
-        return $this->gitHubMetricsService->getPullRequests($username);
-    }
-
-    public function getIssuesResolved($username)
-    {
-        return $this->gitHubMetricsService->getIssuesResolved($username);
-    }
+    }    
 
     public function getCommitFrequency($username, $repoName)
     {
