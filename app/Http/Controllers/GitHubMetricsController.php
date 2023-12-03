@@ -34,18 +34,18 @@ class GitHubMetricsController extends Controller
         return $this->gitHubMetricsService->getCommitFrequency($username, $repoName);
     }
 
-    public function getCodeReviewInvolvement($username)
+    public function getCodeReviewInvolvement($username, $repoName)
     {
-        return $this->gitHubMetricsService->getCodeReviewInvolvement($username);
+        return $this->gitHubMetricsService->getCodeReviewInvolvement($username, $repoName);
     }
 
-    public function getIssueResolutionTime($username)
+    public function getIssueResolutionTime($username, $repoName)
     {
-        return $this->gitHubMetricsService->getIssueResolutionTime($username);
+        return $this->gitHubMetricsService->getIssueResolutionTime($username, $repoName);
     }
 
-    public function getCodeChurn($username)
+    public function getCodeChurn($username, $repoName)
     {
-        return $this->gitHubMetricsService->getCodeChurn($username);
+        return $this->gitHubMetricsService->getCodeChurn($username, $repoName);
     }
 }
