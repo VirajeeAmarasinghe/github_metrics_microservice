@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  laravel-tests:
+  github_metrics_microservice:
 
     runs-on: ubuntu-latest
 
